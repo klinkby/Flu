@@ -1,0 +1,55 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Klinkby.Flu.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="FeedUrl" Type="System.Uri" Scope="Application">
+      <Value Profile="(Default)">http://web.ssi.dk/Aktuelt/Nyhedsbreve/INFLUENZA-NYT.aspx?feed=1</Value>
+    </Setting>
+    <Setting Name="ContentPattern" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">^.+?(?'senitel'[\d,]+)\ .+? (?'emergency'[\d,]+)\ </Value>
+    </Setting>
+    <Setting Name="Culture" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">da-DK</Value>
+    </Setting>
+    <Setting Name="Lat" Type="System.Double" Scope="Application">
+      <Value Profile="(Default)">55.666388</Value>
+    </Setting>
+    <Setting Name="Lon" Type="System.Double" Scope="Application">
+      <Value Profile="(Default)">12.5854653</Value>
+    </Setting>
+    <Setting Name="TweetFormat" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Influenzaniveauet er ændret fra {0} til »{1}«. {2} #influenza</Value>
+    </Setting>
+    <Setting Name="Range" Type="System.Collections.Specialized.StringCollection" Scope="Application">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;0,0	meget lav&lt;/string&gt;
+  &lt;string&gt;1,0	lav&lt;/string&gt;
+  &lt;string&gt;1,5	middel&lt;/string&gt;
+  &lt;string&gt;3,5	høj&lt;/string&gt;
+  &lt;string&gt;5,0	meget høj&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="LevelPattern" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">»(?'level'[\w\ ]+)«</Value>
+    </Setting>
+    <Setting Name="ListSlug" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">influenza-dk</Value>
+    </Setting>
+    <Setting Name="ListOwner" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">klinkby</Value>
+    </Setting>
+    <Setting Name="ApiKey" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">****</Value>
+    </Setting>
+    <Setting Name="ApiSecret" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">****</Value>
+    </Setting>
+    <Setting Name="AccessToken" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">****</Value>
+    </Setting>
+    <Setting Name="AccessTokenSecret" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">****</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
